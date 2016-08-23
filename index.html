@@ -1,18 +1,109 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html lang="en" class="no-js"> 
-<!--<![endif]-->
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
-    	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>PickaPet</title>
-	</head>
-	<body>
-	<h1>PickaPet</h1>
-	</body>
-	</html>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>PickaPet</title>
+</head>
+<body>
+	<header class="cd-header">
+		<div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">About us</li>
+
+			<li><a href="#0">The team</a></li>
+			<li><a href="#0">Our services</a></li>
+			<li><a href="#0">Our projects</a></li>
+
+			<li class="cd-label">Work with us</li>
+
+			<li><a href="#0">Start a project</a></li>
+			<li><a href="#0">Join In</a></li>
+			<li><a href="#0">Create an account</a></li>
+
+			<li class="cd-label">Follow us</li>
+			
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+		</ul>
+	</nav>
+
+	<section class="cd-intro">
+		<h1>PickaPet</h1>
+	</section>
+
+	<main class="cd-main-content">
+		<div class="cd-container">
+	<form class="cd-form floating-labels">
+		<fieldset>
+			<legend>Join Us</legend>
+
+			<div class="error-message">
+				<p>Please enter a valid email address</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Owner</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-company">Farm Name</label>
+				<input class="company" type="text" name="cd-company" id="cd-company">
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Farm Info</legend>
+
+			<div>
+				<h4>Farm Type</h4>
+
+				<p class="cd-select icon">
+					<select class="budget">
+						<option value="0">Cat</option>
+						<option value="1">Dog</option>
+						<option value="2">Fish</option>
+						<option value="3">Other</option>
+					</select>
+				</p>
+			</div> 
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Farm Address</label>
+      			<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+			</div>
+
+			<div>
+				<center>
+					<input type="submit" value="Register">
+				</center>	
+		    </div>
+		</fieldset>
+		</div>
+	</main>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
